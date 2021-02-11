@@ -86,4 +86,4 @@ class Discriminator(nn.Module):
 
     def forward(self, x):
         x = self.model(x)
-        return x.mean().reshape([1])
+        return x.mean().view([1])
