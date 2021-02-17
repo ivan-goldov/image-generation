@@ -39,7 +39,7 @@ def train(data, G_AB, G_BA, D_A, D_B,
           n_epochs=args.n_epochs, batch_size=args.batch_size, lr=args.lr, lmbda=args.lmbda, 
           save_models=args.save_models, save_losses=args.save_losses, 
           shuffle=args.shuffle, shift=args.shift):
-    nonlocal losses_gan, losses_a, losses_b, DEVICE, RESCALE_SIZE
+    global losses_gan, losses_a, losses_b, DEVICE, RESCALE_SIZE
     losses_gan = []
     losses_a = []
     losses_b = []
